@@ -6,7 +6,7 @@ This project illustrates how the current canary build of ember doesn't seem to b
 ## To get started with this..
 
 * `npm install -g mimosa`
-* `https://github.com/dbashford/ember-sad-almond`
+* `git clone https://github.com/dbashford/ember-sad-almond`
 * `cd ember-sad-almond`
 
 ## Unbundled Works
