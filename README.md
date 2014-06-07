@@ -34,4 +34,4 @@ This mimosa command runs the r.js optimizer and bundles the small app with almon
 * `node app.js`
 * Launch http://localhost:3000
 
-  When loading in the browser you get `Uncaught Error: app missing ember` from almond.
+When loading in the browser you get `Uncaught Error: app missing ember` from almond.
