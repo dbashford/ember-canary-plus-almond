@@ -41139,7 +41139,7 @@ define("ember-views/views/view_collection",
 
     __exports__["default"] = ViewCollection;
   });
-define("ember",
+define("ember-int",
   ["ember-metal","ember-runtime","ember-handlebars","ember-views","ember-routing","ember-application","ember-extension-support"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__, __dependency6__, __dependency7__) {
     "use strict";
@@ -46416,6 +46416,6 @@ define('rsvp', [
     __exports__.map = map;
     __exports__.filter = filter;
 });
-requireModule("ember");
+requireModule("ember-int");
 
 })();

@@ -15,8 +15,8 @@ requirejs.config({
 
     // switch the comment on the next two lines to go betweem
     // canary and beta
-    'ember': 'vendor/ember/ember.beta'
-    //'ember': 'vendor/ember/ember.canary'
+    //'ember': 'vendor/ember/ember.beta'
+    'ember': 'vendor/ember/ember.canary'
   }
 });
 
