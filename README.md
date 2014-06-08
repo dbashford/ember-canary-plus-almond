@@ -38,9 +38,9 @@ When loading in the browser you get `Uncaught Error: app missing ember` from alm
 
 # The fix
 
-One of many changes between `1.6` and `1.7` was the inclusion of a `define('ember', ...)` and a `requireModule("ember")`.  This causes issues.  I haven't drilled down to exactly why, but I have to guess that because ember `define`s itself, my own definition of ember gets lost.  Two definitions for the same module is probable badness.
+One of many changes between `1.6` and `1.7` was the inclusion of `define('ember', ...)` and a `requireModule("ember")` in the code.  This causes issues.  I haven't figured out exactly why, but I'd guess that because ember `define`s itself, my own definition of ember gets lost.  Two definitions for the same module is likely the source of my trouble badness.
 
-I suspect ember doing a `define("ember", ...)` may not work for most folks, but my lack of understanding of what ember is doing and why may mean I'm not tracking something important.
+I suspect ember doing a `define("ember", ...)` may not work for most folks, but my lack of understanding of what ember is doing and why may mean I'm not tracking something important.  This is the canary build, so hopefully this gets ironed out before it hits beta.
 
 You can see the [change I made to effect a fix](https://github.com/dbashford/ember-sad-almond/commit/c0a494d5f4bb17d155bf64ff8305b844f3c7aa3a#diff-d3e32a8bff1fe1e269b30fc403dfeafeL41139) right here.  If you `git checkout fix-it` you'll get a version of the app that works fine bundled with almond.
 
