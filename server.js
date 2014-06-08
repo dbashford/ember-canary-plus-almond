@@ -6,7 +6,6 @@ exports.startServer = function(config, callback) {
 
   var port = process.env.PORT || config.server.port;
 
-
   var app = express();
   var server = app.listen(port, function() {
     console.log("Express server listening on port %d in %s mode", server.address().port, app.settings.env);
@@ -34,4 +33,3 @@ exports.startServer = function(config, callback) {
 
   callback(server);
 };
-

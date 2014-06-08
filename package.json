@@ -1,7 +1,6 @@
 {
-  "name": "ember",
+  "name": "ember-canary-plus-almond",
   "version": "0.0.1",
-  "description": "A Mimosa starter skeleton",
   "dependencies": {
     "consolidate": "0.10.0",
     "jade": "0.35.0",

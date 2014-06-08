@@ -1,13 +1,15 @@
-ember-sad-almond
+ember-canary-plus-almond
 ================
 
-This project illustrates how the current canary build of ember doesn't seem to be bundling with almond.  This app literally does nothing other than `console.log` Ember if it is successfully imported.
+This project illustrates how the `1.7` canary build of ember doesn't seem to be bundling with almond.  
+
+This simple test app does nothing other than `console.log` Ember if it is successfully imported.
 
 ## To get started with this..
 
 * `npm install -g mimosa`
-* `git clone https://github.com/dbashford/ember-sad-almond`
-* `cd ember-sad-almond`
+* `git clone https://github.com/dbashford/ember-canary-plus-almond`
+* `cd ember-canary-plus-almond`
 
 ## Unbundled Works
 
@@ -42,7 +44,7 @@ One of many changes between `1.6` and `1.7` was the inclusion of `define('ember'
 
 I suspect ember doing a `define("ember", ...)` may not work for most folks, but my lack of understanding of what ember is doing and why may mean I'm not tracking something important.  This is the canary build, so hopefully this gets ironed out before it hits beta.
 
-You can see the [change I made to effect a fix](https://github.com/dbashford/ember-sad-almond/commit/c0a494d5f4bb17d155bf64ff8305b844f3c7aa3a#diff-d3e32a8bff1fe1e269b30fc403dfeafeL41139) right here.  If you `git checkout fix-it` you'll get a version of the app that works fine bundled with almond.
+You can see the [change I made to effect a fix](https://github.com/dbashford/ember-canary-plus-almond/commit/c0a494d5f4bb17d155bf64ff8305b844f3c7aa3a#diff-d3e32a8bff1fe1e269b30fc403dfeafeL41139) right here.  If you `git checkout fix-it` you'll get a version of the app that works fine bundled with almond.
 
 Changes to the ember source:
 
