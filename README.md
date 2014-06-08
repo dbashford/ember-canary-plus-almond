@@ -3,7 +3,7 @@ ember-canary-plus-almond
 
 This project illustrates how the `1.7` canary build of ember doesn't seem to be bundling with almond.  
 
-This simple test app does nothing other than `console.log` Ember if it is successfully imported.
+See [a fix](https://github.com/dbashford/ember-canary-plus-almond#the-fix) below.
 
 ## To get started with this..
 
