@@ -5,6 +5,8 @@ This project illustrates how the `1.7` canary build of ember doesn't seem to be 
 
 See [a fix](https://github.com/dbashford/ember-canary-plus-almond#the-fix) below.
 
+If you are a [Mimosa](www.mimosa.io) user, I created an [adhoc-module](https://github.com/dbashford/mimosa-adhoc-module) that solves the problem.  You can [find the source here](https://gist.github.com/dbashford/66f1ca3734280b72f182).
+
 ## To get started with this..
 
 * `npm install -g mimosa`
