@@ -35,3 +35,16 @@ This mimosa command runs the r.js optimizer and bundles the small app with almon
 * Launch http://localhost:3000
 
 When loading in the browser you get `Uncaught Error: app missing ember` from almond.
+
+# The fix
+
+One of many changes between `1.6` and `1.7` was the inclusion of a `define('ember', ...)` and a `requireModule("ember")`.  This causes issues.  I haven't drilled down to exactly why, but I have to guess that because ember `define`s itself, my own definition of ember gets lost.  Two definitions for the same module is probable badness.
+
+I suspect ember doing a `define("ember", ...)` may not work for most folks, but my lack of understanding of what ember is doing and why may mean I'm not tracking something important.
+
+You can see the [change I made to effect a fix](https://github.com/dbashford/ember-sad-almond/commit/c0a494d5f4bb17d155bf64ff8305b844f3c7aa3a#diff-d3e32a8bff1fe1e269b30fc403dfeafeL41139) right here.  If you `git checkout fix-it` you'll get a version of the app that works fine bundled with almond.
+
+Changes to the ember source:
+
+* Change `define('ember', ...)` to `define('ember-int', ...)`
+* Change `requireModule("ember")` to `requireModule("ember-int")`
