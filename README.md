@@ -23,7 +23,7 @@ All this does is `console.log` the Ember object from insde the `app.js` file.
 ## Bundled with 1.6 beta works
 
 * Go into `main.js` and uncomment the line containing `ember.beta` and comment the line containing `ember.canary`.
-* `mimosa build -op` (short for `--optimize --server`)
+* `mimosa build -op` (short for `--optimize --package`)
 * `cd dist`
 * `node app.js`
 * Launch http://localhost:3000
@@ -33,7 +33,7 @@ This mimosa command runs the r.js optimizer and bundles the small app with almon
 ## Bundled with 1.7 canary does not work
 
 * Go into `main.js` and comment the line containing `ember.beta` and uncomment the line containing `ember.canary`.
-* `mimosa build -op` (short for `--optimize --server`)
+* `mimosa build -op` (short for `--optimize --package`)
 * `cd dist`
 * `node app.js`
 * Launch http://localhost:3000
