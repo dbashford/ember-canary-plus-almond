@@ -42,7 +42,7 @@ When loading in the browser you get `Uncaught Error: app missing ember` from alm
 
 # The fix
 
-One of many changes between `1.6` and `1.7` was the inclusion of `define('ember', ...)` and a `requireModule("ember")` in the code.  This causes issues.  I haven't figured out exactly why, but I'd guess that because ember `define`s itself, my own definition of ember gets lost.  Two definitions for the same module is likely the source of my trouble badness.
+One of many changes between `1.6` and `1.7` was the inclusion of `define('ember', ...)` and a `requireModule("ember")` in the code.  This causes issues.  I haven't figured out exactly why, but I'd guess that because ember `define`s itself, my own definition of ember gets lost.  Two definitions for the same module is likely the source of my trouble.
 
 I suspect ember doing a `define("ember", ...)` may not work for most folks, but my lack of understanding of what ember is doing and why may mean I'm not tracking something important.  This is the canary build, so hopefully this gets ironed out before it hits beta.
 
